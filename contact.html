@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!-- Link to the custom CSS file for styling -->
+    <link rel="stylesheet" href="css/contact.css">
+    <!-- Link to Font Awesome for using icons in the website -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- Skip navigation links for accessibility to jump directly to sections -->
+    <a href="#contact" class="skip-links" role="link">Skip to Contact Form</a>
+    <a href="#location" class="skip-links" role="link">Skip to Location</a>
+    <a href="#footer" class="skip-links" role="link">Skip to Footer</a>
+
+    <!-- Header section with navigation and branding -->
+    <header class="navbar" role="banner">
+        <!-- Branding for the website -->
+        <div class="logo" role="logo">Dwello</div>
+        <nav class="nav-links" role="navigation">
+            <!-- Navigation links for different sections of the site -->
+            <ul>
+                <li itemprop="ListItem"><a href="index.html" role="link">Home</a></li>
+                <li itemprop="ListItem"><a href="#" role="link">Service</a></li>
+                <li itemprop="ListItem"><a href="agents.html" role="link">Agents</a></li>
+                <li itemprop="ListItem"><a href="contact.html" role="link">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="right-section" role="complementary">
+            <!-- Icons for search and user profile -->
+            <div class="icons" role="group">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-regular fa-user"></i>
+            </div>
+            <!-- Sign-up button -->
+            <button class="sign-up" role="button">Sign Up</button>
+        </div>
+    </header>
+    
+    <!-- Hero section for visual impact and heading -->
+    <section class="hero" role="region">
+        <img src="images/photo9.jpg" alt="header image of one of Dwello's houses for sale" class="hero-image">
+        <div class="hero-content">
+            <!-- Main heading for the contact page -->
+            <h1 role="heading">Contact Us!</h1>
+            <p>In just a few clicks, we can begin the search <br>for your dream home. Or, if you're located in Myrtle <br>Beach, feel free to stop by our office for a free consultation.</p>
+            <button role="button">Sign up</button>
+        </div>
+    </section>
+
+    <main>
+        <!-- Contact form section -->
+        <section class="contact" id="contact" role="form" itemscope itemtype="https://schema.org/ContactPoint">
+            <div class="contact-container">
+                <div class="contact-image">
+                    <!-- Image showcasing a luxury home -->
+                    <img src="images/photo10.jpg" alt="Small house front in the daytime">
+                </div>
+                <div class="contact-form">
+                    <!-- Title for the contact form -->
+                    <h2 class="form-title" role="heading">Get In Touch</h2>
+                    <!-- Subtext to encourage users to fill out the form -->
+                    <p class="form-subtext">Contact us today to find your dream home.</p>
+                    <form action="#" method="post" role="form">
+                        <!-- Input group for name field -->
+                        <div class="input-group">
+                            <label for="name" class="hidden">Full Name</label>
+                            <input type="text" name="name" id="name" placeholder="Full Name" required class="em2">
+                        </div>
+                        <!-- Input group for email field -->
+                        <div class="input-group">
+                            <label for="email" class="hidden">Email Address</label>
+                            <input type="email" name="email" id="email" placeholder="Email Address" required class="em2">
+                        </div>
+                        <!-- Input group for message field -->
+                        <div class="input-group">
+                            <label for="message" class="hidden">Your Message</label>
+                            <textarea name="message" id="message" placeholder="Your Message" rows="5" required class="em2"></textarea>
+                        </div>
+                        <!-- Submit button for the contact form -->
+                        <button type="submit" class="contact-btn" role="button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Section displaying the location with Google Maps iframe -->
+        <section class="contact-1" id="location" role="region" itemscope itemtype="https://schema.org/Address">
+            <div class="container1">
+                <div class="contact-image1" itemprop="address">
+                    <!-- Embedded Google Maps iframe showing the location -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4810.655348641305!2d-78.88758177884347!3d33.686147531161154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x890069b281ac2943%3A0xf73bce032fcb61aa!2s2nd%20Ave%20Pier!5e0!3m2!1sen!2sca!4v1741952887259!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+                </div>
+                <div class="contact-form1">
+                    <!-- Title for the location section -->
+                    <h2 class="form-title1" role="heading">Come Visit Us In Person</h2>
+                    <!-- Subtext with details about the location and hours -->
+                    <p class="form-subtext1">Come on down and visit us in our office located on the main strip in downtown Myrtle Beach! We're open Monday - Saturday, 9AM - 6PM. No matter when you come, you will be met with friendly smiles and top of the line service.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer section with branding and links -->
+    <footer id="footer" role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
+        <div class="footer-content">
+            <div class="footer-branding" role="complementary">
+                <h2>Dwello</h2>
+                <p>Bringing you closer to <br> your Southern dream home, <br>one click at a time.</p>
+            </div>
+            <!-- Footer section with about links -->
+            <div class="footer-section">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#" role="link">Our Story</a></li>
+                    <li><a href="#" role="link">Careers</a></li>
+                    <li><a href="#" role="link">Our Team</a></li>
+                    <li><a href="#" role="link">Resources</a></li>
+                </ul>
+            </div>
+            <!-- Footer section with support links -->
+            <div class="footer-section" role="complementary">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#" role="link">FAQ</a></li>
+                    <li><a href="#" role="link">Contact Us</a></li>
+                    <li><a href="#" role="link">Help Center</a></li>
+                    <li><a href="#" role="link">Terms of Service</a></li>
+                </ul>
+            </div>
+            <!-- Footer section with location and events links -->
+            <div class="footer-section" role="complementary">
+                <h3>Find Us</h3>
+                <ul>
+                    <li><a href="#" role="link">Events</a></li>
+                    <li><a href="#" role="link">Locations</a></li>
+                    <li><a href="#" role="link">Newsletter</a></li>
+                </ul>
+            </div>
+            <!-- Footer section with social media links -->
+            <div class="footer-section" role="complementary">
+                <h3>Our Social</h3>
+                <ul>
+                    <li><a href="#" role="link"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#" role="link"><i class="fa-brands fa-square-facebook"></i> Facebook</a></li>
+                    <li><a href="#" role="link"><i class="fa-brands fa-square-x-twitter"></i> Twitter (X)</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

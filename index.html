@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dwello - Real Estate</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <a href="#main-content" class="skip-links"  role="link" aria-label="Skip to Main Content">Skip to Main Content</a>
+    <a href="#residences" class="skip-links" role="link" aria-label="Skip to Residences">Skip to Residences</a>
+    <a href="#contact" class="skip-links" role="link" aria-label="Skip to Contact">Skip to Contact</a>
+    <!-- skip links to the most important parts of the page -->
+
+    <header class="navbar" role="banner">
+        <div class="logo" role="img" aria-label="Dwello Logo">Dwello</div>
+        <nav class="nav-links" role="navigation">
+            <ul role="list">
+                <li role="listitem"><a href="index.html" role="link" aria-label="Home">Home</a></li>
+                <li role="listitem"><a href="#" role="link" aria-label="Service">Service</a></li>
+                <li role="listitem"><a href="agents.html" role="link" aria-label="Agents">Agents</a></li>
+                <li role="listitem"><a href="contact.html" role="link" aria-label="Contact">Contact</a></li>
+                <!-- nav at the top of the page showing different pages the users can attend -->
+            </ul>
+        </nav>
+        <div class="right-section">
+            <div class="icons">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-regular fa-user"></i>
+                    <!-- icons on the far right of the nav -->
+            </div>
+            <button class="sign-up" role="button">Sign Up</button>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <img src="images/photo9.jpg" alt="heading image of one of Dwello's houses for sale" class="hero-image">
+        <div class="hero-content">
+            <h1 role="heading">Find Your <br> <span>Dream Home</span></h1>
+            <p>Explore our curated selection of exquisite <br> properties meticulously tailored to your <br>unique dream home vision.</p>
+            <button role="button">Sign up</button>
+            <!-- put text on left side of the screen and image on the right to match mock website -->
+        </div>
+    </section>
+
+    <div class="search-bar" id="main-content" role="region">
+        <div class="input-container">
+            <label for="location" class="hidden">Location</label>
+            <span class="icon">
+                <i class="fa-solid fa-location-dot"></i>
+            </span>
+            <input type="text" id="location" placeholder="Location">
+        </div>
+        <div class="input-container">
+            <label for="type" class="hidden">Type</label>
+            <span class="icon">
+                <i class="fa-solid fa-house"></i>
+            </span>
+            <input type="text" id="type" placeholder="Type">
+        </div>
+        <div class="input-container">
+            <label for="price-range" class="hidden">Price Range</label>
+            <span class="icon">
+                <i class="fa-solid fa-coins"></i>
+            </span>
+            <input type="text" id="price-range" placeholder="Price Range">
+        </div>
+        <button class="signup-btn" role="button">Sign up</button>
+        <!-- input boxes for users to type and filter their searches, icons included in the input boxes -->
+    </div>
+
+    <section class="test">
+        <div class="testimg">
+            <img src="images/proto2.jpg" alt="One of Dwello's many estates" role="img">
+        </div>
+        <div class="testcontent">
+            <h2 class="home" role="heading">We Help You To Find <br> Your Dream Home</h2>
+            <p class="center-text">
+                From cozy cottages to luxurious estates, our <br>
+                dedicated team guides you through every step of the <br>
+                journey, ensuring your dream home becomes a reality.
+            </p>
+            <div class="stats" role="list" aria-label="Statistics">
+                <div class="stat-item" role="listitem">
+                    <h3 role="heading">8K+</h3>
+                    <p>Houses Available</p>
+                </div>
+                <div class="stat-item" role="listitem">
+                    <h3 role="heading">6K+</h3>
+                    <p>Houses Sold</p>
+                </div>
+                <div class="stat-item" role="listitem">
+                    <h3 role="heading">2K+</h3>
+                    <p>Trusted Agents</p>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+
+        <h2 class="why" role="heading">Why Choose Us</h2>
+        <p class="whyp">Elevating Your Home Buying Experience with Expertise, Integrity, <br>and Unmatched Personalized Service</p>
+
+        <div class="boxes" role="region">
+            <div class="card4" role="article">
+                <i class="fa-solid fa-location-dot"></i>
+                    <h3 role="heading"> Expert Guidance</h3>
+                    <p>Benefit from our team's <br>seasoned expertise for a <br>smooth buying experience</p>
+            </div>
+            <div class="card4" role="article">
+                <i class="fa-solid fa-user-plus"></i>
+                <h3 role="heading"> Personalized Service</h3>
+                <p>Our services adapt to your <br>unique needs, making your journey stress-free</p>
+            </div>
+            <div class="card4" role="article">
+                <i class="fa-solid fa-clipboard-check"></i>
+                 <h3 role="heading"> Transparent Process</h3>
+                <p>Stay informed with our <br>clear and honest approach <br>to buying your home</p>
+            </div>
+            <div class="card4" role="article">
+                <i class="fa-solid fa-handshake-simple"></i>
+                <h3 role="heading"> Exceptional Support</h3>
+                <p>Providing peace of mind <br>with our responsive and <br>attentive customer service</p>
+            </div>
+            <!-- more icons within cards with padding around them to make the icons look like they're in a box of their own -->
+        </div>
+
+    <h2 class="res" id="residences" role="heading">Our Popular Residences</h2>
+    <div class="card-container" role="region">
+        <!-- Card 1 -->
+        <div class="card" role="article">
+            <img src="images/proto8.jpg" alt="One of Dwello's houses in North Carolina" role="img">
+            <div class="card-content">
+                <div class="location">
+                    <h3 role="heading"><i class="fa-solid fa-location-dot"></i> Wilmington, North Carolina</h3>
+                </div>
+                <div class="details">
+                    <span><i class="fa-solid fa-bed"></i> 4 Rooms</span>
+                    <span>
+                        <!-- used the span icon to keep the text and icon on the same axis in css -->
+                    <i class="fa-solid fa-ruler"></i> 3,500 sq ft</span>
+                </div>
+                <div class="bottom-section">
+                    <button class="button" role="button">Sign Up</button>
+                    <div class="price">$2,500,000</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="images/proto7.jpg" alt="House" role="One of Dwello's Houses for sale in South Carolina">
+            <div class="card-content">
+                <div class="location">
+                    <h3 role="heading"><i class="fa-solid fa-location-dot"></i> Myrtle Beach, South Carolina</h3>
+                </div>
+                <div class="details">
+                    <span>
+                        <i class="fa-solid fa-bed"></i> 3 Rooms</span>
+                    <span><i class="fa-solid fa-ruler"></i> 1,500 sq ft</span>
+                </div>
+                <div class="bottom-section">
+                    <button class="button" role="button">Sign Up</button>
+                    <div class="price">$850,000</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="images/proto6.webp" alt="One of Dwello's houses for sale in Georgia" role="img">
+            <div class="card-content">
+                <div class="location">
+                    <h3 role="heading"><i class="fa-solid fa-location-dot"></i> Augusta, Georgia</h3>
+                </div>
+                <div class="details">
+                    <span><i class="fa-solid fa-bed"></i> 6 Rooms</span>
+                    <span><i class="fa-solid fa-ruler"></i>
+                        4,000 sq ft</span>
+                </div>
+                <div class="bottom-section">
+                    <button class="button" role="button">Sign Up</button>
+                    <div class="price">$3,700,000</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="say" role="heading" itemprop="headline">What People Say <br>About Dwello </h2>
+    <div class="card-container-1" role="region">
+        <div class="card-2" role="article">
+            <img src="images/proto3.jpg" alt="A house recently sold by Dwello in South Carolina" role="img">
+            <div class="card-content2">
+                <h2 role="heading" itemscope itemtype="https://schema.org/Person"> Sarah Nguyen</h2>
+                <div class="location-rating">
+                <h3 role="heading">Charleston, SC</h3>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <span>5.0</span>
+                </div>
+                </div>
+                <!-- copied the previous cards and used them for these ones as well, took our icons and certain content -->
+                <p itemprop="description">Dwello truly cares about their clients. They listened to my needs and preferences and helped me find the perfect home. Their professionalism and attention to detail are unmatched.</p>     
+            </div>
+        </div>
+
+        <div class="card-2">
+            <img src="images/proto4.jpg" alt="House recently sold by Dwello in Alabama" role="img">
+            <div class="card-content2">
+                <h2 role="heading" itemscope itemtype="https://schema.org/Person">Michael Rodriguez</h2>
+                <div class="location-rating">
+                    <h3 role="heading">Birmingham, AL</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <span>4.5</span>
+                    </div>
+                </div>
+                <p itemprop="description">I had a fantastic experience working with Dwello. Their expertise and personalized service exceeded my expectations. I found my dream home quickly and smoothly. Highly recommended!</p>
+            </div>
+        </div>
+
+        <div class="card-2">
+            <img src="images/proto5.jpg" alt="House recently sold by Dwello in North Carolina" role="img">
+            <div class="card-content2">
+                <h2 role="heading" itemscope itemtype="https://schema.org/Person">Emily Johnson</h2>
+                <div class="location-rating">
+                    <h3 role="heading">Fayetteville, NC</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <span>5.0</span>
+                    </div>
+                </div>
+                <p itemprop="description">Dwello made my dream of owning a home a reality! Their team provided exceptional support and guided me through every step of the process. I couldn't be happier with my new home!</p>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="navigation" id="contact" role="navigation">
+            <button class="nav-btn left-btn" role="button">❮</button>
+            <button class="nav-btn right-btn" role="button">❯</button>
+            <!-- added buttons to make the two circular buttons with the arrows in them -->
+        </div>
+    </section>
+
+
+    <div class="con4">
+        <h2 class="ques" role="heading">Do You Have Any Questions? <br> Get Help From Us</h2>
+        <div class="flex-container">
+            <h3 role="heading"><i class="fa-solid fa-circle-check"></i>Chat live with our support team</h3>
+            <h3 class="faq" role="heading"><i class="fa-solid fa-circle-check"></i>Browse our FAQ</h3>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <div class="email-input-container" role="form">
+            <label for="email" class="hidden">Email</label> 
+            <i class="fa-solid fa-envelope"></i>
+            <input class="em" type="email" id="email" name="email" placeholder="Enter your email address..." itemprop="email">
+            <!-- added an email inut box along with a submit button on the same axis -->
+        </div>
+        <button type="submit" class="sub" role="button">Submit</button>
+    </div>
+    
+    <footer role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
+        <div class="footer-content">
+            <div class="footer-branding">
+                <h2 role="heading">Dwello</h2>
+                <p>Bringing you closer to <br> your Southern dream home, <br>one click at a time.</p>
+            </div>
+            <div class="footer-section">
+                <h3 role="header" itemprop="headline">About</h3>
+                <ul role="list">
+                    <li role="listitem" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="#" role="link">Our Story</a></li>
+                    <li role="listitem" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="#" role="link">Careers</a></li>
+                    <li role="listitem" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="#" role="link">Our Team</a></li>
+                    <li role="listitem" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="#" role="link">Resources</a></li>
+                    <!-- footer with more page and external links -->
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 role="heading">Support</h3>
+                <ul role="list">
+                    <li role="listitem" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="#" role="link">FAQ</a></li>
+                    <li role="listitem" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="#" role="link">Contact Us</a></li>
+                    <li role="listitem" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="#" role="link">Help Center</a></li>
+                    <li role="listitem" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="#" role="link">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 role="heading">Find Us</h3>
+                <ul role="list">
+                    <li role="listitem"><a href="#" role="link">Events</a></li>
+                    <li role="listitem"><a href="#" role="link">Locations</a></li>
+                    <li role="listitem"><a href="#" role="link">Newsletter</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 role="heading">Our Social</h3>
+                <ul role="list">
+                    <li role="listitem"><a href="#" role="link"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                    <li role="listitem"><a href="#" role="link"><i class="fa-brands fa-square-facebook"></i> Facebook</a></li>
+                    <li role="listitem"><a href="#" role="link"><i class="fa-brands fa-square-x-twitter"></i> Twitter (X)</a></li>
+                    <!-- more icons to go along with the social media links -->
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
